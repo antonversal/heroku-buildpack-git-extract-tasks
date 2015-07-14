@@ -1,2 +1,25 @@
 #!/usr/bin/env bash
-cat /etc/heroku/dyno
+# this pack is valid for apps with a hello.txt in the root
+
+indent() {
+  sed -u 's/^/       /'
+}
+echo "get env variables"
+echo "--------------"
+echo $3
+ls $3 -a
+
+echo "--------------"
+echo $1
+ls $1 -a
+
+echo "--------------"
+echo $2
+ls $2 -a
+printenv
+
+echo "---->> getting BUILD_INFO"
+
+cat $BUILD_INFO
+
+exit 1

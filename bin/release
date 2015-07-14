@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-cat /etc/heroku/dyno
+exit 1 -a

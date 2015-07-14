@@ -1,2 +1,10 @@
 #!/usr/bin/env bash
+echo "Git extract tasks"
+echo "ls BUILD_DIR"
+echo $1 -a
+ls $1 -a
+ls $1/app -a
+
+ls $1/detected -a
+
 exit 0
