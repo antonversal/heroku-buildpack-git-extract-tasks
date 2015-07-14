@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-/etc/heroku/dyno
+cat /etc/heroku/dyno
